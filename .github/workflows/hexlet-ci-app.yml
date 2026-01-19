@@ -5,6 +5,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
-            - run: make setup
-            - run: make test
-            - run: make lint
+            - name: run setup
+              run: make setup
+            - name: run test
+              run: make test
+            - name: run lint
+              run: make lint
